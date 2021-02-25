@@ -1,0 +1,56 @@
+﻿<html><head><title>Exercise 1A</title></head><body>
+<p>&lt;Your name&gt;<br />COMC2750 Exercise 1H</p>
+<p>&nbsp;</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><b>Find Conceptual Classes:</b> Using the category list below (from Larman, p140-141) and the given use cases and database diagram,&nbsp;list the conceptual classes that fit each category.&nbsp;(The same class may be listed more than once.)&nbsp; Also list any classes below that don't fit any specific category.</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt">&nbsp;</p>
+<p style="font-weight: 700">Description:</p>
+<p>The Gear Pass is a new concept in the snowboarding world. In order to improve customer experience on the resorts, this pass will span across several resorts and be an add-on to the customer&#39;s season pass. The pass will allow the customers to try out different pieces of gear. This pass will have a multitude of options associated with it. The pass will have different tiers and levels for the customer to choose from. Depending on what &#39;Level&#39; the customer chooses they will get anywhere from a snowboard, snow boots, and helmet to a snowboard, snow boots, helmet, goggles, coat, and pants. The &#39;Tier&#39; that they choose will dictate the quality of the equipment they are using. Tier 1 would be the most recent season&#39;s gear, and it would go down to Tier 3 which would be older gear but a more affordable option. The Gear Pass will include information about each piece of gear that the customer can choose from. The Pass will also keep information about the customer, and the condition of the gear. </p>
+<p style="font-weight: 700">Use Cases:</p>
+<p>As an employee, I want to add a Gear Pass.</p>
+<p>As an employee, I want to add a Season Pass.</p>
+<p>As an employee, I want to add levels to the Gear Pass.</p>
+<p>As an employee, I want to add tiers to the Gear Pass.</p>
+<p>As an employee, I want to add a snowboard to the Gear Pass.</p>
+<p>As an employee, I want to add snowboard boots to the Gear Pass.</p>
+<p>As an employee, I want to add a helmet to the Gear Pass.</p>
+<p>As an employee, I want to add goggles to the Gear Pass.</p>
+<p>As an employee, I want to add a coat to the Gear Pass.</p>
+<p>As an employee, I want to add snow pants to the Gear Pass.</p>
+<p>As an employee, I want to monitor the condition of gear rented out each season.</p>
+<p><b>Business transactions:</b></p>
+<p>Rent(rentId, price, startDate, returnDate)</p>
+<p><b>Transaction line items:</b></p>
+<p>GearPass(gearPassId, gearPassLevel, gearPassTier)</p>
+<p><b>Product or service related to a transaction:</b>&nbsp;</p>
+<p>Snowboard(snowboardId, name, brand, length, width, year)</p>
+<p>Snowboots(snowbootsId, name, brand, size, year)</p>
+<p>Goggles(goggleId, name, brand, size, year)</p>
+<p>Helmet(helmetId, name, brand, size, year)</p>
+<p>Coat(coatId, name, brand, size, year)</p>
+<p>SnowPants(snowPantsId, name, brand, size, year)</p>
+<p><b>Roles of people:</b></p>
+<p>Customer(customerId)</p>
+<p>Employee(employeeId)</p>
+<p><b>Place of transaction or service:</b></p>
+<p>&nbsp;</p>
+<p><b>Noteworthy events:</b>&nbsp;</p>
+<p>&nbsp;</p>
+<p><b>Physical objects:</b></p>
+<p>Person(personId, firstName, lastName, phoneNumber, address, city, state, zip)</p>
+<p><b>Descriptions of things:</b></p>
+<p>Snowboard(snowboardId, name, brand, length, width, year)</p>
+<p>Snowboots(snowbootsId, name, brand, size, year)</p>
+<p>Goggles(goggleId, name, brand, size, year)</p>
+<p>Helmet(helmetId, name, brand, size, year)</p>
+<p>Coat(coatId, name, brand, size, year)</p>
+<p>SnowPants(snowPantsId, name, brand, size, year)</p>
+<p>Level1(snowboard, snowboots)</p>
+<p>Level2(snowboard,snowboots, helmet, goggles)</p>
+<p>Level3(snowobrad, snowboots, helmet, goggles, coat, pants)</p>
+<p><b>Catalogs:</b></p>
+<p>&nbsp;</p>
+<p><b>Containers of other things:</b></p>
+<p>&nbsp;</p>
+<p><b>Things in a container:</b></p>
+<p>&nbsp;</p>
+</body></html>
