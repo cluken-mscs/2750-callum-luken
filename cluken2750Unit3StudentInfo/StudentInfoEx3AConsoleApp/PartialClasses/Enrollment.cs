@@ -19,12 +19,12 @@ namespace StudentInfoEx3AConsoleApp
             this.Student = student;
             Student.Enrollments.Add(this);
         }
-        public AssignmentGrade FindAssignmentGrade(string assignment)
+        public AssignmentGrade FindAssignmentGrade(string assign)
         {
             AssignmentGrade foundAssignmentGrade = null;
             foreach (AssignmentGrade g in this.AssignmentGrades)
             {
-                if (g.Assignment.Id.ToString() == assignment.ToString())
+                if (g.Assignment.ToString() == assign)
                 {
                     foundAssignmentGrade = g;
                     break;
@@ -32,5 +32,6 @@ namespace StudentInfoEx3AConsoleApp
             }
             return foundAssignmentGrade;
         }
+
     }
 }

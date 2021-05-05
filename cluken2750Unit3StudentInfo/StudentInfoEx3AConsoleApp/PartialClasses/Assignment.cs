@@ -20,12 +20,12 @@ namespace StudentInfoEx3AConsoleApp
             this.Section = section;
             Section.Assignments.Add(this);
         }
-        public AssignmentGrade FindAssignmentGrade(string assignment)
+        public AssignmentGrade FindAssignmentGrade(int id)
         {
             AssignmentGrade foundAssignmentGrade = null;
             foreach (AssignmentGrade g in this.AssignmentGrades)
             {
-                if (g.Assignment.ToString() == assignment.ToString())
+                if (g.Id == id)
                 {
                     foundAssignmentGrade = g;
                     break;
