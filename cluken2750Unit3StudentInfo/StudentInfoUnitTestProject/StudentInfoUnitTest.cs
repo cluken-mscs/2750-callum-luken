@@ -298,9 +298,9 @@ namespace StudentInfoUnitTestProject
             new AssignmentGrade(10000017, 7, DateTime.Parse("1/30/2019"),
                 section2750_2020spr.FindEnrollment(10000017), section2750_2020spr.FindAssignment("1C"));
 
-            //Assignment a = section2750_2020spr.FindAssignment("1B");
-            //AssignmentGrade g = a.FindAssignmentGrade(10000013);
-            //Assert.AreEqual(10000009, g.Id);
+            Assignment a = section2750_2020spr.FindAssignment("1B");
+            AssignmentGrade g = a.FindAssignmentGrade(10000013);
+            Assert.AreEqual(10000009, g.Id);
         }
 
         [TestMethod]
@@ -370,9 +370,9 @@ namespace StudentInfoUnitTestProject
             new AssignmentGrade(10000020, 50, DateTime.Parse("1/26/2019"),
                 section2750_2020spr.FindEnrollment(10000015), section2750_2020spr.FindAssignment("Q1"));
 
-            //Enrollment enr = section2750_2020spr.FindEnrollment(10000015);
-            //int totalPoints = enr.CalcTotalPoints();
-            //Assert.AreEqual(84, totalPoints);
+            Enrollment enr = section2750_2020spr.FindEnrollment(10000015);
+            int totalPoints = enr.CalcTotalPoints();
+            Assert.AreEqual(84, totalPoints);
         }
 
 
@@ -414,8 +414,8 @@ namespace StudentInfoUnitTestProject
 
             Enrollment enr = section2750_2020spr.FindEnrollment(10000015);
 
-            //GradesEnum grade = enr.CalcGrade();
-            //Assert.AreEqual(GradesEnum.B, grade);
+            GradesEnum grade = enr.CalcGrade();
+            Assert.AreEqual(GradesEnum.B, grade);
         }
     }
 }

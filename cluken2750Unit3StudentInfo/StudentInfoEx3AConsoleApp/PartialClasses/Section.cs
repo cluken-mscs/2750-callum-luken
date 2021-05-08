@@ -37,7 +37,7 @@ namespace StudentInfoEx3AConsoleApp
             Assignment foundAssignment = null;
             foreach (Assignment a in this.Assignments)
             {
-                if (a.Id == Id)
+                if (a.Id == id)
                 {
                     foundAssignment = a;
                     break;
@@ -57,6 +57,15 @@ namespace StudentInfoEx3AConsoleApp
                 }
             }
             return foundAssignment;
+        }
+        public int CalcTotalPoints()
+        {
+            int totalPoints = 0;
+            foreach (Assignment a in Assignments)
+            {
+                totalPoints += a.MaxPoints;
+            }
+            return totalPoints;
         }
     }
 }

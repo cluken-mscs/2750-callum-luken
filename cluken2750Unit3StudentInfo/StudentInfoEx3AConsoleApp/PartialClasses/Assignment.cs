@@ -23,11 +23,11 @@ namespace StudentInfoEx3AConsoleApp
         public AssignmentGrade FindAssignmentGrade(int id)
         {
             AssignmentGrade foundAssignmentGrade = null;
-            foreach (AssignmentGrade g in this.AssignmentGrades)
+            foreach (AssignmentGrade a in this.AssignmentGrades)
             {
-                if (g.Id == id)
+                if (a.Enrollment.Student.Id == id)
                 {
-                    foundAssignmentGrade = g;
+                    foundAssignmentGrade = a;
                     break;
                 }
             }
